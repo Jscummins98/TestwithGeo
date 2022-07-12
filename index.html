@@ -1,123 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <title>HI</title>
+  <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-html, body {
-  margin: 0;
-  height: 100%;
-  overflow: hidden;
-}
-
-body {
-  background-color: #EEE;
-}
-
-.ctr {
-  height: 400px;
-  width: 400px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -200px 0 0 -200px;
-  line-height: 400px;
-  text-align: center;
-}
-
-.a, .b {
-  height: 198px;
-  width: 198px;
-  border: 2px solid #333;
-  position: absolute;
-  top: 100px;
-  left: 100px;
-    transition: all 5s;
-  transform: translate(0,0);
-}
-
-.a {
-  transform: rotate(-900deg);
-}
-
-.b {
-  transform: rotate(945deg);
-}
-
-.btn {
-  height: 202px;
-  width: 202px;
-  position: absolute;
-  top: 100px;
-  left: 100px;
-  background-color: #333;
-  border-radius: 200px;
-  transform: scale(0.5);
-  transition: all 5s;
-  z-index: 999;
-  opacity: 1;
-}
-
-.btn:hover {
-  transform: scale(1);
-  border-radius: 0;
-  transition-delay: 2s;
-  opacity: 0.1;
-}
-
-.btn:hover ~ .a, .btn:hover ~ .b {
-  transform: rotate(0);
-  transition: all 5s;
-}
-
-
-.cf {
-  height: 162px;
-  width: 162px;
-  margin: auto;
-  border-radius: 101px;
-  transform: scale(0);
-  transition: all 5s;
-  border: 20px solid #00ffe5;
-  background-color: #333;
-  opacity: 1;
-}
-
-.btn:hover > .cf {
-  transform: scale(5);
-  border: 20px solid #1CCAD8;
-  background-image: url("https://farm8.staticflickr.com/7728/17149201518_4304b795db_o.jpg");
-  opacity: 0;
-}
-
-.dt {
-  position: fixed;
-  top: -100px;
-  left: -100px;
-  width: 300%;
-  transition: all 5s;
-  transform: scale(2) rotate(0deg);
-  opacity: 0;
-}
-
-.btn:hover ~ .dt {
-  transform: scale(2) rotate(400deg);
-  opacity: 1;
-}
-    </style>
-</head>
-<body>
-    <div class="ctr">
-        <div class="btn">
-          <div class="cf">
-          </div>
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+        <h1 class="title">Legit Webpage Template</h1>
+    <!-- Navigation Bar -->
+        <ul class="nav">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+            </li>
+        </ul>
+        <!-- Body for grids -->
+        <div class="grid">
+            <div class="row">
+            <div class="col">
+                Column
+            </div>
+            <div class="col">
+                Column
+            </div>
+            <div class="col">
+                Column
+            </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                Column
+                </div>
+                <div class="col">
+                Column
+                </div>
+                <div class="col">
+                Column
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                Column
+                </div>
+                <div class="col">
+                Column
+                </div>
+                <div class="col">
+                Column
+                </div>
+            </div>
         </div>
-        <div class="a"></div>
-        <div class="b"></div>
-        <img src="https://d2unfigtnsklzd.cloudfront.net/wp-content/uploads/2016/03/Jackson-Cummins-450x300.jpg" width="2000px" class="dt" />
-        
-      </div>
-</body>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
 </html>
